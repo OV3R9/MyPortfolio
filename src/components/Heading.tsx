@@ -1,7 +1,7 @@
 function Heading() {
   return (
     <>
-      <div className="flex flex-wrap w-[24vw] h-[30vh] content-center">
+      <div className="flex flex-wrap w-[24vw] h-[30vh] content-center animate-appears-anim-l">
         <p className="text-[32px] w-full lg:leading-3 text-nowrap">
           Hi there, I'm
         </p>

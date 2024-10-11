@@ -38,7 +38,7 @@ function Socials() {
 
   return (
     <>
-      <div className="ml-[8vw] mr-[8vw] h-[88vh]">
+      <div className="ml-[8vw] mr-[8vw] h-[88vh] animate-appears-anim-l animation-timeline animation-range">
         <div className="mt-32 flex flex-row justify-between flex-wrap">
           <div className="flex-col justify-center">
             <div className="w-[30vw] h-[10vw] flex flex-col">
@@ -46,7 +46,7 @@ function Socials() {
               <h2 className="text-center text-5xl text-nowrap">Find me🔎?</h2>
             </div>
 
-            <div className="">
+            <div className="lg:mt-16 mt-12">
               <div className="h-[30px] w-full bg-[#26282b] flex items-center rounded-md">
                 <p className="ml-2 text-gray-500">README.md</p>
               </div>
@@ -62,9 +62,9 @@ function Socials() {
           <div className="w-[30vw] flex-col flex items-center">
             <p className="text-lg mb-3">GitHub:</p>
             <img alt="" className="rounded-2xl" src={gitObj?.avatar_url}></img>
-            <h2 className="text-center text-5xl mt-10">
+            <h2 className="text-center text-5xl lg:mt-10 mt-5">
               <div
-                className="border-4 border-white rounded-lg p-3 text-3xl
+                className="border-4 border-white rounded-lg p-3 lg:text-3xl text-xl
               hover:bg-white hover:text-pink-500 transition-all duration-[.5s] cursor-pointer"
               >
                 <a href={gitObj?.html_url} target="_blank">
@@ -74,7 +74,7 @@ function Socials() {
             </h2>
           </div>
 
-          <div className="w-[100vw] flex justify-evenly items-center mt-40">
+          <div className="w-[100vw] flex justify-evenly items-center lg:mt-40 mt-80 ">
             <h2 className="text-2xl">Other Socials: </h2>
             <a href="https://www.instagram.com/_kamil.p__/" target="_blank">
               <div

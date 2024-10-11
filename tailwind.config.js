@@ -10,10 +10,32 @@ module.exports = {
         showQuestion: {
           "50%": { opacity: "0" },
         },
+        appearsl: {
+          from: {
+            transform: "translateX(-100px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateX(0px)",
+            opacity: "1",
+          },
+        },
+        appearsr: {
+          from: {
+            transform: "translateX(100px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateX(0px)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "show-text": "showText 0.4s infinite step-end alternate",
         "show-question": "showQuestion 0.4s infinite step-end alternate",
+        "appears-anim-l": "appearsl 2s linear",
+        "appears-anim-r": "appearsr 2s linear",
       },
       backgroundImage: {
         animatedBG: "url('/src/assets/animatedGIF.gif')",
@@ -21,7 +43,21 @@ module.exports = {
       colors: {
         "alfa-black": "rgba(0,0,0,0.7)",
       },
+      screens: {
+        lgg: "1420px",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".animation-timeline": {
+          "animation-timeline": "view()",
+        },
+        ".animation-range": {
+          "animation-range": "entry 0% cover 40%",
+        },
+      });
+    },
+  ],
 };

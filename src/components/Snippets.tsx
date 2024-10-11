@@ -1,8 +1,8 @@
 function Snippets() {
   return (
     <>
-      <div className="flex w-full mt-6 h-[66vh] min-h-[700px]">
-        <div className="w-[45%] self-start">
+      <div className="flex w-full mt-6 min-h-[700px] flex-wrap">
+        <div className="lg:w-[45%] w-[100%] min-w-[45%] self-start animate-appears-anim-l">
           <div className="h-[30px] w-full bg-[#26282b] flex items-center rounded-md">
             <p className="ml-2 text-gray-500">App.tsx</p>
           </div>
@@ -59,7 +59,7 @@ function Snippets() {
           </div>
         </div>
 
-        <div className="w-[45%] mt-28 ml-auto">
+        <div className="lg:w-[45%] w-[100%] mt-10 lg:mt-28 ml-auto min-w-[45%] animate-appears-anim-r">
           <div className="h-[30px] w-full bg-[#26282b] flex items-center rounded-md">
             <p className="ml-2 text-gray-500">Index.css</p>
           </div>
@@ -88,12 +88,6 @@ function Snippets() {
                   <p>
                     {"przedmioty-zawodowe: "}{" "}
                     <span className="text-orange-400">{"11/10"}</span>;
-                    <span className="text-green-700 font-mono">
-                      {"      "}
-                      <span className="text-green-700">
-                        {"/* Intrested in since childhood */"}
-                      </span>
-                    </span>
                   </p>{" "}
                 </div>
                 <span className="text-yellow-400">{"}"}</span>
@@ -107,7 +101,8 @@ function Snippets() {
                 <div className="ml-3">
                   <p>
                     {"date-of-birth: "}{" "}
-                    <span className="text-[#3883d9]">{"calc"}</span> {"("}
+                    <span className="text-[#3883d9]">{"calc"}</span>
+                    {"("}
                     <span className="text-orange-400">{"09.11.2007"}</span>
                     {");"}
                   </p>
@@ -127,6 +122,12 @@ function Snippets() {
                   <p>
                     {"passion: "}
                     <span className="text-orange-400">{"100%"}</span>;
+                    <span className="text-green-700 font-mono">
+                      {"      "}
+                      <span className="text-green-700">
+                        {"/* Never gonna change */"}
+                      </span>
+                    </span>
                   </p>
                   <p>
                     {"determination: "}
