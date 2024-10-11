@@ -1,7 +1,7 @@
 function RoadMap() {
   return (
     <>
-      <div className="h-[100vh] w-full flex flex-col items-center lgg:gap-80 gap-20 mt-20 lgg:mt-0 animate-appears-anim-l animation-timeline animation-range">
+      <div className="h-[100vh] max-h[100vh] w-full flex flex-col items-center lgg:gap-80 gap-20 mt-20 lgg:mt-0 animate-appears-anim-l animation-timeline animation-range">
         <h2 className="text-center text-3xl mt-5 w-full ">
           My Learning Roadmap:
         </h2>
